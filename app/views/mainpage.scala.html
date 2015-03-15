@@ -1,0 +1,16 @@
+@(us: String)(form : Form[models.Authent])
+@main("Startseite"){
+<h1>Hallo @us</h1>
+
+<div class="jumbotron">
+  <h2>Dropbox</h2>
+  <p>Bitte Melden Sie sich bei Ihrer Dropbox an</p>
+  <p><a class="btn btn-primary btn-lg" href="https://www.dropbox.com/login" target="_blank" role="button">Dropbox</a></p>
+  <p>danach kopieren Sie den Code der bei Dropboxauthentifikationsnummer kommt in das Textfeld </p>
+  <p><a class="btn btn-primary btn-lg" href=@routes.Application.dropbox() role="button">Dropboxauthentifikationsnummer</a></p>
+<form class="input-group input-group-sm" action=@routes.Application.authentification() method="post" id="formAuth">
+  <input type="text" class="form-control" placeholder="authentifikationsnummer" aria-describedby="groessen-addon3" name="authe" id="auth">
+  <input type="submit" value="Authentifikation">
+</form>
+</div>
+}

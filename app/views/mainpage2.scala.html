@@ -1,0 +1,16 @@
+@(us: String)(form : Form[models.Authent])(status: TreeSet[String])
+@main("Startseite"){
+<h1>Hallo @us</h1>
+
+<div class="jumbotron" style="position: absolute; left: 20px;">
+  <h2>Dropbox</h2>
+   
+   @for( inhalt <- status ) {
+       <li style="background-color:#EEEEEE; list-style: none"><img src=@routes.Assets.at("images/foldericon.jpg") alt=""/>@inhalt</li>
+		}
+ 
+ </div>
+ 
+ 
+
+}
