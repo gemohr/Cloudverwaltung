@@ -13,5 +13,7 @@ libraryDependencies ++= Seq(
   cache,
   javaWs,
   "org.xerial" % "sqlite-jdbc" % "3.7.15-M1",
-   "com.dropbox.core" % "dropbox-core-sdk" % "1.7.7"
-)
+  "com.dropbox.core" % "dropbox-core-sdk" % "1.7.7",
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
+   )
+  
