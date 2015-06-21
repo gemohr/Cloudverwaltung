@@ -1,1 +1,1 @@
-web (1X): target/universal/stage/bin/cloudverwaltung -http.port=${PORT} -applyEvolutions.default=true -db.default.driver=org.postgresql.Driver -db.default.url=${"DATABASE_URL"}
+web: target/universal/stage/bin/cloudverwaltung -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${"DATABASE_URL"}
